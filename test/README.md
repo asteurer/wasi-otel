@@ -1,11 +1,8 @@
 # Testing guidelines
-
-TK fill in testing guidelines
+TODO
 
 ## Installing the tools
-
-TK fill in instructions
+TODO
 
 ## Running the tests
-
-TK fill in instructions
+TODO
