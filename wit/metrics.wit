@@ -5,7 +5,7 @@ interface metrics {
     use tracing.{span-id, trace-id};
 
     /// Exports a resource's metric data.
-    %export: func(metrics: resource-metrics) -> result<_, error>;
+    %export: async func(metrics: resource-metrics) -> result<_, error>;
 
     /// An error resulting from `export` being called.
     type error = string;

@@ -4,7 +4,7 @@ interface logs {
     use wasi:clocks/wall-clock@0.2.11.{datetime};
 
     /// Called when a log is emitted.
-    on-emit: func(data: log-record);
+    on-emit: async func(data: log-record);
 
     /// Represents the recording of an event.
     record log-record {

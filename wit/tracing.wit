@@ -3,10 +3,10 @@ interface tracing {
     use types.{key-value, instrumentation-scope};
 
     /// Called when a span is started.
-    on-start: func(context: span-context);
+    on-start: async func(context: span-context);
 
     /// Called when a span is ended.
-    on-end: func(span: span-data);
+    on-end: async func(span: span-data);
 
     /// Returns the span context of the most recently entered span.
     current-span-context: func() -> span-context;
